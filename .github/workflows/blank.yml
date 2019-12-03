@@ -1,0 +1,5 @@
+- name: Scalafmt Action
+  uses: openlawteam/scalafmt-ci@v2.0.1
+  with:
+    # Args to pass to scalafmt
+    args: # optional, default is --list
