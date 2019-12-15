@@ -28,7 +28,6 @@ object Day6 {
   def main(args: Array[String]): Unit = {
     val inputFile = "day6"
     val input = Source.fromResource(inputFile).getLines.toSeq
-    // println(orbitCount(input))
     println(orbitsSwapCount(input))
   }
 
@@ -75,7 +74,7 @@ object Day6 {
   }
 
   def findCommon(graph1: Seq[Node], graph2: Seq[Node]): Node = {
-    // Logger.logImp(graph1, graph2)
+    Logger.logInfo(graph1, graph2)
     graph1.zip(graph2).foldLeft(graph1.head) {
       case (acc, (node1, node2)) if (node1 == node2) => node1
       case (acc, _)                                  => return acc

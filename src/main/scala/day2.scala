@@ -31,7 +31,6 @@ object Day2 {
 
   def processInstruction(index: Int, input: Array[Int], depth: Int): Unit = {
     val operation = input(index)
-    // if (depth % 100 == 0) println(s"Depth : $depth")
     operation match {
       case 99 => return
       case x if (x == 1 || x == 2) => {

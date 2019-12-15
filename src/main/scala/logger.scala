@@ -4,6 +4,6 @@ object Logger {
   }
   
   def logImp(args: Any*) = {
-    println(args.mkString(" "))
+    // println(args.mkString(" "))
   }
 }

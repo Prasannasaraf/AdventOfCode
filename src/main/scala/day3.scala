@@ -187,7 +187,5 @@ object Day3 {
     val edges2 = DayImpl.getEdges(secondWire)
     println(DayImpl.closestDistance(edges1, edges2))
     println(DayImpl.closestSteps(edges1, edges2))
-    println(firstWire.size)
-    println(secondWire.size)
   }
 }
